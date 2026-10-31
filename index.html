@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primal Dash: Dino Run</title>
+<meta name="description" content="A colorful prehistoric endless runner. Offline, no account, no ads.">
+<meta name="theme-color" content="#0f1b33">
+<link rel="icon" href="assets/favicon-64.png">
+<style>
+:root{--bg1:#0f1b33;--bg2:#23406e;--card:rgba(13,24,48,.86);--line:rgba(255,255,255,.14);--text:#f2f5fb;--muted:#b7c3da;--gold:#ffd23f;--orange:#ff9f43;--green:#3ec27a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{min-height:100vh;background:radial-gradient(ellipse at 50% 0%,var(--bg2) 0%,var(--bg1) 60%,#0a1224 100%);background-color:var(--bg1);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--gold)}
+.wrap{max-width:880px;margin:0 auto;padding:24px 16px 48px}
+header.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+header.top img{width:44px;height:44px;border-radius:11px}
+header.top .brand{font-weight:900;letter-spacing:.02em;font-size:20px;color:var(--text);text-decoration:none}
+nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+nav a{color:var(--text);text-decoration:none;padding:6px 12px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:14px}
+nav a[aria-current]{background:var(--gold);color:#3b1a00;border-color:transparent}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.card+.card{margin-top:16px}
+h1{font-size:clamp(26px,5vw,38px);line-height:1.15;margin-bottom:6px}
+h2{font-size:20px;margin:22px 0 6px;color:var(--gold)}
+p{margin:8px 0}
+.muted{color:var(--muted)}
+ul.ticks{list-style:none;margin:10px 0}
+ul.ticks li{position:relative;padding-left:28px;margin:6px 0}
+ul.ticks li:before{content:"";position:absolute;left:4px;top:.55em;width:12px;height:7px;border-left:3px solid var(--green);border-bottom:3px solid var(--green);transform:rotate(-45deg)}
+.hero{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin-bottom:16px}
+.hero img{display:block;width:100%;height:auto}
+.title{font-weight:900;font-size:clamp(34px,7vw,56px);line-height:1;background:linear-gradient(180deg,#fff2a8,#ffd23f 35%,#ff9f43 70%,#ff5e7e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{letter-spacing:.32em;font-weight:900;margin:6px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.tile{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(255,255,255,.04)}
+.tile b{display:block;color:var(--gold);margin-bottom:2px}
+.btn{display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;background:linear-gradient(180deg,#ffd23f,#ff9f43);color:#3b1a00;font-weight:900;text-decoration:none}
+ol.steps{margin:8px 0 8px 22px}
+ol.steps li{margin:6px 0}
+footer{margin-top:24px;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:520px){.card{padding:18px}nav{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><img src="assets/icon-256.png" alt=""><a class="brand" href="index.html">Primal Dash</a><nav><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></header>
+<div class="hero"><img src="assets/key-art.jpg" alt="Primal Dash: a green dinosaur runs past a cactus and a pterosaur, with a glowing volcano in the background" width="1920" height="1080"></div>
+<section class="card">
+<div class="title">PRIMAL DASH</div>
+<div class="sub">DINO RUN</div>
+<p>A colorful prehistoric runner with a full Adventure Mode - and the classic Endless Run - where dinosaurs, storms, erupting volcanoes and changing worlds make every run different.</p>
+<div class="grid">
+<div class="tile"><b>Adventure Mode</b>5 worlds, 25 levels and 5 friendly bosses. Hearts, stars, a world map and 7 colors to unlock.</div>
+<div class="tile"><b>8 prehistoric creatures</b>From T. rex to Triceratops and the Woolly rhino - each with its own power move. A Creature Book with names to hear and fossils to find.</div>
+<div class="tile"><b>Endless Run</b>The classic game: run as far as you can while the world speeds up. Beat your high score.</div>
+<div class="tile"><b>Run, jump &amp; duck</b>Tap to jump, tap again for a double jump, hold to duck under pterosaurs or smash through logs, plants and snowmen.</div>
+<div class="tile"><b>A living world</b>Jungle, desert, snow, volcanoes and a moonlit swamp - with rain, snow, thunderstorms and day and night.</div>
+<div class="tile"><b>A talking dinosaur</b>Short, simple English phrases and creature names with matching speech bubbles. No microphone, ever.</div>
+<div class="tile"><b>Play anywhere</b>Works offline. No account, no ads, no data collected. Progress stays on your device.</div>
+</div>
+<p class="muted" style="margin-top:14px">Coming soon to the App Store and Google Play.</p>
+</section>
+
+<footer>&copy; 2026 Adnan Yawar &middot; <a href="mailto:adnanmoon@gmail.com">adnanmoon@gmail.com</a></footer>
+</div>
+</body>
+</html>
