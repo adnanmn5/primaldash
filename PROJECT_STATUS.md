@@ -1,6 +1,6 @@
 # Primal Dash: Dino Run - project status
 
-Last updated: 2026-11-05.
+Last updated: 2026-11-06.
 
 This is a public summary, so AI assistants and helpers can follow the project. The game's source code is private and is **not** in this repository. This repository holds only the store website and the privacy policy.
 
@@ -18,7 +18,7 @@ A colorful, offline, kid-friendly (ages 6+) prehistoric runner for Android and i
 | | |
 |---|---|
 | On Google Play | **1.0.1** (build 2), live for **internal testing** and **closed testing** |
-| Next update | **1.2.0** (build 4): built, being tested on the owner's phones, not uploaded yet |
+| Next update | **1.2.0**: no startup flicker confirmed on the owner's Huawei. **Rollout on hold** until the narrator voice is remade (the current temporary voice sounds too robotic) |
 | Public release | Not yet. Google requires 12+ closed testers for 14 days first |
 | Store listing | Done: description, graphics, content rating, audience 6+ |
 | Privacy policy | https://adnanmn5.github.io/primaldash/privacy.html |
@@ -27,7 +27,7 @@ A colorful, offline, kid-friendly (ages 6+) prehistoric runner for Android and i
 ### History of the next update
 - **1.1.0** (test build only, never uploaded): a first version of Dino Friends (3 short scenes) and a startup fix. On the owner's Huawei phone the start still flickered three times, and Dino Friends looked too plain: small characters, no banner, little to do besides word buttons.
 - **1.2.0** (current test build) reworks both:
-  - **Startup flicker, root cause:** on slower phones the game automatically lowers its drawing resolution in the first seconds, and each change briefly showed an empty frame (twice), plus the launch screen fade: the three flickers. The game now redraws immediately when this happens, and on Android 11 and older the launch screen is a plain, steady background with no jumping icon.
+  - **Startup flicker, root cause** (confirmed fixed on the owner's Huawei Mate 20 X): on slower phones the game automatically lowers its drawing resolution in the first seconds, and each change briefly showed an empty frame (twice), plus the launch screen fade: the three flickers. The game now redraws immediately when this happens, and on Android 11 and older the launch screen is a plain, steady background with no jumping icon.
   - **Dino Friends, rebuilt as a mini-game:**
     - A welcome screen with a big animated banner, a friendship meter (New / Good / Best / Super friends) and five illustrated story tiles. Finished stories get a gold star.
     - A close-up camera, so the dinosaurs are about twice as big.
@@ -43,8 +43,8 @@ A colorful, offline, kid-friendly (ages 6+) prehistoric runner for Android and i
   - **Narrator:** a friendly narrator voice guides the stories. It is temporary (computer-made) until a real narrator records the lines.
 
 ## Open items
-1. **Real-phone check of 1.2.0:** startup (no flicker, both fresh start and returning to the app), all five stories with sound, and the screen staying on.
-2. **Narrator:** replace the temporary narrator voice with a recorded one.
+1. **After the new voice, testers check 1.2.0 on other phones:** startup (no flicker, both fresh start and returning to the app), all five stories with sound, and the screen staying on. The flicker fix is already confirmed on the Mate 20 X.
+2. **Narrator voice (next, blocks the rollout):** the temporary voice sounds robotic. It will be remade with a more natural neural voice service. The clips are made once on the developer's computer and bundled, so the app stays fully offline.
 3. **Map report:** a tester reported that, after level 2-1, tapping level 1 on the map doesn't start it. We can't reproduce it yet and are waiting for a screen recording.
 4. **Closed test:** keep 12+ testers in the closed test for 14 days, then apply for the public release.
 5. **Dino Friends, later:** the baby dinosaur as a companion in Adventure mode, a sound "echo" playground and short play-together tips for parents.
