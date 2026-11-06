@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credits &amp; licences - Primal Dash: Dino Run</title>
+<meta name="description" content="Credits, ownership and licences for Primal Dash: Dino Run.">
+<meta name="theme-color" content="#0f1b33">
+<link rel="icon" href="assets/favicon-64.png">
+<style>
+:root{--bg1:#0f1b33;--bg2:#23406e;--card:rgba(13,24,48,.86);--line:rgba(255,255,255,.14);--text:#f2f5fb;--muted:#b7c3da;--gold:#ffd23f;--orange:#ff9f43;--green:#3ec27a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{min-height:100vh;background:radial-gradient(ellipse at 50% 0%,var(--bg2) 0%,var(--bg1) 60%,#0a1224 100%);background-color:var(--bg1);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--gold)}
+.wrap{max-width:880px;margin:0 auto;padding:24px 16px 48px}
+header.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+header.top img{width:44px;height:44px;border-radius:11px}
+header.top .brand{font-weight:900;letter-spacing:.02em;font-size:20px;color:var(--text);text-decoration:none}
+nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+nav a{color:var(--text);text-decoration:none;padding:6px 12px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:14px}
+nav a[aria-current]{background:var(--gold);color:#3b1a00;border-color:transparent}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.card+.card{margin-top:16px}
+h1{font-size:clamp(26px,5vw,38px);line-height:1.15;margin-bottom:6px}
+h2{font-size:20px;margin:22px 0 6px;color:var(--gold)}
+p{margin:8px 0}
+.muted{color:var(--muted)}
+ul.ticks{list-style:none;margin:10px 0}
+ul.ticks li{position:relative;padding-left:28px;margin:6px 0}
+ul.ticks li:before{content:"";position:absolute;left:4px;top:.55em;width:12px;height:7px;border-left:3px solid var(--green);border-bottom:3px solid var(--green);transform:rotate(-45deg)}
+.hero{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin-bottom:16px}
+.hero img{display:block;width:100%;height:auto}
+.title{font-weight:900;font-size:clamp(34px,7vw,56px);line-height:1;background:linear-gradient(180deg,#fff2a8,#ffd23f 35%,#ff9f43 70%,#ff5e7e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{letter-spacing:.32em;font-weight:900;margin:6px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.tile{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(255,255,255,.04)}
+.tile b{display:block;color:var(--gold);margin-bottom:2px}
+.btn{display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;background:linear-gradient(180deg,#ffd23f,#ff9f43);color:#3b1a00;font-weight:900;text-decoration:none}
+ol.steps{margin:8px 0 8px 22px}
+ol.steps li{margin:6px 0}
+footer{margin-top:24px;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:520px){.card{padding:18px}nav{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><img src="assets/icon-256.png" alt=""><a class="brand" href="index.html">Primal Dash</a><nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="credits.html" aria-current="page">Credits</a></nav></header>
+<section class="card">
+<h1>Credits &amp; licences</h1>
+<p class="muted">Last updated: 6 November 2026 (app version 1.2.0)</p>
+<p><b>Primal Dash: Dino Run</b> &copy; 2026 Adnan Yawar. All rights reserved.</p>
+</section>
+<section class="card">
+<h2>Original work</h2>
+<p>The game code, characters, artwork, levels, sound effects and texts are original work made for Primal Dash by the developer. The artwork is drawn by the game's own code; no third-party images, sprites or fonts are included.</p>
+<h2>Music</h2>
+<p>Original background music, provided by the developer with the right to use it in this game.</p>
+<h2>Voices</h2>
+<p>The dinosaur voice and the Dino Friends narrator are <b>synthetic (AI-generated) voices</b>. They were made once, on the developer's computer, with open-source text-to-speech tools whose licences allow commercial use and distribution:</p>
+<ul class="ticks">
+<li><b>Kokoro-82M</b> by hexgrad - Apache License 2.0 (dinosaur voice, and the base character of the narrator voice)</li>
+<li><b>Chatterbox</b> by Resemble AI - MIT License (narrator). Its audio carries Resemble's inaudible watermark, which marks it as AI-generated.</li>
+</ul>
+<p>The voices are not recordings of any real person, and no real person's voice was cloned or imitated. The finished clips are built into the app; the app contains no speech engine and no speech service.</p>
+<h2>Software</h2>
+<ul class="ticks">
+<li><b>Capacitor</b> and its official plugins (app, haptics, preferences, splash screen) - Ionic - MIT License</li>
+<li><b>AndroidX</b> libraries - Google - Apache License 2.0</li>
+</ul>
+<h2>Privacy</h2>
+<p>The game works fully offline: no ads, no accounts, no data collection, no microphone. See the <a href="privacy.html">privacy policy</a>.</p>
+</section>
+<section class="card">
+<h2>Questions or concerns</h2>
+<p>If you have a question about these credits, or believe something in the game uses your work without permission, please email <a href="mailto:adnanmoon@gmail.com?subject=Primal%20Dash%20credits">adnanmoon@gmail.com</a>. We will look into it promptly.</p>
+</section>
+
+<footer>&copy; 2026 Adnan Yawar &middot; <a href="mailto:adnanmoon@gmail.com">adnanmoon@gmail.com</a></footer>
+</div>
+</body>
+</html>

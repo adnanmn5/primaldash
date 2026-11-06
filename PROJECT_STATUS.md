@@ -18,7 +18,7 @@ A colorful, offline, kid-friendly (ages 6+) prehistoric runner for Android and i
 | | |
 |---|---|
 | On Google Play | **1.0.1** (build 2), live for **internal testing** and **closed testing** |
-| Next update | **1.2.0**: no startup flicker confirmed on the owner's Huawei. **Rollout on hold** until the narrator voice is remade (the current temporary voice sounds too robotic) |
+| Next update | **1.2.0**: no startup flicker confirmed on the owner's Huawei. New, more natural narrator voice made; **rollout on hold** until the owner approves it on the phone |
 | Public release | Not yet. Google requires 12+ closed testers for 14 days first |
 | Store listing | Done: description, graphics, content rating, audience 6+ |
 | Privacy policy | https://adnanmn5.github.io/primaldash/privacy.html |
@@ -40,11 +40,13 @@ A colorful, offline, kid-friendly (ages 6+) prehistoric runner for Android and i
     - Lots of feedback: confetti, sparkles, hearts, bubbles, butterflies and a dancing celebration at the end.
     - Every story also finishes on its own if the child just watches, and a bouncing arrow shows where to tap.
   - **"Screen stays on"** (new setting): the phone no longer dims or locks while a child watches a story. After 10 minutes without a touch it sleeps normally.
-  - **Narrator:** a friendly narrator voice guides the stories. It is temporary (computer-made) until a real narrator records the lines.
+  - **Narrator:** a friendly male narrator voice guides the stories. The first version sounded robotic, so all 50 lines were remade with a newer open-source AI voice model (Chatterbox, MIT licence), run on the developer's own computer. The owner chose the voice from six candidates. No real person's voice was copied, and the app still has no speech engine or internet access: it only plays the bundled clips.
+  - **Dialogue timing:** a line never starts while another is still playing, with a short pause between lines and a slightly longer one when a different character speaks. The music dips under every voice.
+  - **Credits & licences:** a new screen in Settings and a new page, https://adnanmn5.github.io/primaldash/credits.html, list who made what and under which licence (original game, music, AI voices, software).
 
 ## Open items
 1. **After the new voice, testers check 1.2.0 on other phones:** startup (no flicker, both fresh start and returning to the app), all five stories with sound, and the screen staying on. The flicker fix is already confirmed on the Mate 20 X.
-2. **Narrator voice (next, blocks the rollout):** the temporary voice sounds robotic. It will be remade with a more natural neural voice service. The clips are made once on the developer's computer and bundled, so the app stays fully offline.
+2. **Narrator voice (blocks the rollout):** the new voice is made and built in; the owner still has to approve it on the phone. A real recorded narrator can still replace it later under the same file names.
 3. **Map report:** a tester reported that, after level 2-1, tapping level 1 on the map doesn't start it. We can't reproduce it yet and are waiting for a screen recording.
 4. **Closed test:** keep 12+ testers in the closed test for 14 days, then apply for the public release.
 5. **Dino Friends, later:** the baby dinosaur as a companion in Adventure mode, a sound "echo" playground and short play-together tips for parents.
